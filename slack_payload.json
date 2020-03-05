@@ -1,0 +1,38 @@
+{
+  "username": "CertMon",
+  "icon_emoji": ":cloud:",
+  "channel": "xx",
+  "text": "*<${EV_BUILD-LOG-LINK}|Certificate expiring in $days_to_expire days!>*",
+  "attachments": [
+    {
+      "color": "#fce903",
+      "blocks": [
+        {
+          "type": "section",
+          "text": {
+            "type": "mrkdwn",
+            "text": ""
+          }
+        },
+        {
+          "type": "divider"
+        },
+        {
+          "type": "context",
+          "elements": [
+            {
+              "type": "image",
+              "image_url": "https://pngimage.net/wp-content/uploads/2018/05/bot-icon-png-6.png",
+              "alt_text": ":bot:"
+            },
+            {
+              "type": "plain_text",
+              "emoji": true,
+              "text": "Cloud Ops | Max's Cert Monitoring Bot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

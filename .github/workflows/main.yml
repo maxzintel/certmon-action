@@ -1,0 +1,18 @@
+
+on:
+  schedule:
+    - cron: '0 0 31 2 7'
+
+jobs:
+  certmon:
+    runs-on: ubuntu-latest
+    name: Monitor Certs!
+    steps:
+    - name: Monitor cert step
+      id: certmon
+      uses: s1dequest/certmon-action-testing@v1
+      with:
+        EV_PROXY: null
+        EV_SLACK-CHANNEL-ID: null
+        EV_BUILD-LOG-LINK: null
+        EV_SLACKHOOK: null

@@ -1,0 +1,29 @@
+
+# action.yml
+name: 'certmon'
+description: 'Monitor certs'
+inputs:
+  EV_PROXY:
+    description: 'Proxy address to access private sites.'
+    required: false
+    default: ''
+  EV_SLACK-CHANNEL-ID:
+    description: 'Channel ID for alerts.'
+    required: true
+    default: ''
+  EV_BUILD-LOG-LINK:
+    description: 'Build log link for slack alerts.'
+    required: true
+    default: ''
+  EV_SLACKHOOK:
+    description: 'Slack hook to send payloads to your team.'
+    required: true
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.EV_PROXY }}
+    - ${{ inputs.EV_SLACK-CHANNEL-ID }}
+    - ${{ inputs.EV_BUILD-LOG-LINK }}
+    - ${{ inputs.EV_SLACKHOOK }}
