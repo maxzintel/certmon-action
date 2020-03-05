@@ -16,7 +16,7 @@ Best used in a cron-scheduled build plan, grouped with other daily monitoring ta
   ]
 }
 ```
-* `"port"` is usually `"443"` in my experience.
+* `"port"` is usually `"443"`.
 * `"public"` determines whether we apply proxy settings in the script or not.
 
  ### ENV VARS Explained:
