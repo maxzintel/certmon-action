@@ -1,7 +1,6 @@
 
 on:
-  schedule:
-    - cron: '0 0 31 2 7'
+  [push]
 
 jobs:
   certmon:
