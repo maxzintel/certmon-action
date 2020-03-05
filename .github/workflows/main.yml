@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Monitor cert step
       id: certmon
-      uses: s1dequest/certmon-action-testing@v1
+      uses: s1dequest/certmon-action@v0.1
       with:
         EV_PROXY: null
         EV_SLACK-CHANNEL-ID: null
